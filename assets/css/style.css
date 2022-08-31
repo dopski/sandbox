@@ -81,7 +81,11 @@ h6{
 }
 
 #home span{
-    color: rgb(255, 80, 80);
+    color: rgb(177, 44, 44);
+}
+
+button:hover{
+    background-color: rgb(177, 44, 44); 
 }
 
 button{
@@ -91,4 +95,6 @@ button{
     background-color: #036812;
     color: aliceblue;
     padding: 12px 30px;
+    text-transform: uppercase;
+    transition: 0.5s ease;
 }
