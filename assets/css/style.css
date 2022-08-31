@@ -79,3 +79,16 @@ h6{
     justify-content: center;
     align-items: flex-start;
 }
+
+#home span{
+    color: rgb(255, 80, 80);
+}
+
+button{
+    font-size: 0.8rem;
+    font-weight: 800;
+    outline: none;
+    background-color: #036812;
+    color: aliceblue;
+    padding: 12px 30px;
+}
