@@ -31,7 +31,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal">Shop</a>
+                        <a class="nav-link active" href="#staticBackdrop" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Shop</a>
                     </li>
                     
                     <li class="nav-item">
@@ -53,7 +53,7 @@
 
     <!-- Modal -->
     <Section id="modal-dialog">
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         
           <div class="modal-dialog">
               <div class="modal-content">
@@ -66,11 +66,47 @@
                   </div>
                   <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <button type="button" class="btn btn-primary">Save</button>
                   </div>
               </div>
           </div>
+    </div> -->
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Launch static backdrop modal
+    </button> -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="staticBackdropLabel">Location Selector</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- <div class="modal-body">
+                    ...
+                </div> -->
+                <div class="mb-2">
+                    <label for="inputProvince" class="form-label">Province</label>
+                    <input type="text" class="form-control" id="inputProvince" placeholder="Laguna">
+
+                    <label for="inputCity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="San Pablo City">
+
+                    <label for="inputBarangay" class="form-label">Barangay</label>
+                    <input type="text" class="form-control" id="inputBarangay" placeholder="San Ignacio">
+                </div>
+
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
     </div>
+
 </Section>
 
     <!-- Main landing page -->
