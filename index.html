@@ -27,7 +27,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Category</a>
+                        <a class="nav-link active" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" href="#offcanvasBottom">Category</a>
                     </li>
 
                     <li class="nav-item">
@@ -53,34 +53,14 @@
 
     <!-- Modal -->
     <Section id="modal-dialog">
-    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title">Location Selector</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                      <p>Modal body text goes here.</p>
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save</button>
-                  </div>
-              </div>
-          </div>
-    </div> -->
-        
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="staticBackdropLabel">Location Selector</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <h4 class="modal-title" id="staticBackdropLabel">Location Selector</h4>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
                 <!-- <div class="modal-body">
                     ...
                 </div> -->
@@ -102,8 +82,22 @@
             </div>
         </div>
     </div>
-
 </Section>
+
+   <!-- OffCanvas (Category) -->
+
+<!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+    aria-controls="offcanvasBottom">Toggle bottom offcanvas</button> -->
+
+<div class="offcanvas offcanvas-bottom" data-bs-scroll="true" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body small">
+        ...
+    </div>
+</div>
 
     <!-- Main landing page -->
     <section id="home">
@@ -111,7 +105,7 @@
             <h5>NEWLY STOCKED</h5>
             <h1><span>Best Prices</span> This Season</h1>
             <p>Our shop offers the best price in town!</p>
-            <button>Shop now!</button>
+            <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">Shop now!</button>
         </div>
     </section>
 
@@ -119,10 +113,10 @@
 
     <section id="brands" class="container">
         <div class="row">
-            <img src="./assets/img/brand_01.jpg" alt="" class="img-fluid col-lg-3 col-md-6 col-sm-12">
-            <img src="./assets/img/brand_02.jpg" alt="" class="img-fluid col-lg-3 col-md-6 col-sm-12">
-            <img src="./assets/img/brand_03.jpg" alt="" class="img-fluid col-lg-3 col-md-6 col-sm-12">
-            <img src="./assets/img/brand_04.jpg" alt="" class="img-fluid col-lg-3 col-md-6 col-sm-12">
+            <img src="./assets/img/comfoods.jpg" alt="Comfoods" class="img-fluid col-lg-3 col-md-6 col-sm-12">
+            <img src="./assets/img/nissin-logo.jpg" alt="Nissin" class="img-fluid col-lg-3 col-md-6 col-sm-12">
+            <img src="./assets/img/Urclogo.jpg" alt="Rebisco" class="img-fluid col-lg-3 col-md-6 col-sm-12">
+            <img src="./assets/img/San_Miguel_logo.png" alt="San Miguel" class="img-fluid col-lg-3 col-md-6 col-sm-12">
         </div>
     </section>
     
