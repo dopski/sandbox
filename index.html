@@ -27,7 +27,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" href="#offcanvasBottom">Category</a>
+                        <a class="nav-link active" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" href="#offcanvasScrolling">Category</a>
                     </li>
 
                     <li class="nav-item">
@@ -86,16 +86,20 @@
 
    <!-- OffCanvas (Category) -->
 
-<!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-    aria-controls="offcanvasBottom">Toggle bottom offcanvas</button> -->
 
-<div class="offcanvas offcanvas-bottom" data-bs-scroll="true" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+<!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+    aria-controls="offcanvasScrolling">Enable body scrolling</button> -->
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
     <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+        <h4 class="offcanvas-title" id="offcanvasScrollingLabel">Category</h4>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body small">
-        ...
+    <div class="offcanvas-body">
+        <p>Air Freshener</p>
+        <p>Alcohol</p>
+        <p>Baby Food</p>
     </div>
 </div>
 
@@ -105,7 +109,7 @@
             <h5>NEWLY STOCKED</h5>
             <h1><span>Best Prices</span> This Season</h1>
             <p>Our shop offers the best price in town!</p>
-            <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">Shop now!</button>
+            <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">Shop now!</button>
         </div>
     </section>
 
